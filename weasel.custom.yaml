@@ -1,0 +1,43 @@
+##weasel.custom.yaml
+# Weasel settings
+# encoding: utf-8
+#使用“输入法设定”修改设定后，本文件内的注释都会消失。。慎重。
+
+patch:
+  "style/color_scheme": sture123    # 這項用於選中下面定義的新方案
+  "preset_color_schemes/sture123":  # 在配色方案列表裏加入標識爲 starcraft 的新方案
+    name: "白天／sture123"
+    author: "qq<qq@gmail.com>"
+    text_color: 0x800000      #連打時.編碼行.編碼前已選文字的顏色----1
+    hilited_text_color: 0x0000ff     #編碼行.編碼顏色----------------5
+    hilited_back_color: 0xccA4D9A4   #編碼行.編碼底色----------------6
+    hilited_candidate_text_color: 0xff0000    #首選高亮.文本顏色-------10
+    hilited_comment_text_color: 0x006018      #首選高亮.編碼提示顏色---11
+    hilited_candidate_back_color: 0xccA4D9A4  #首選高亮.底色-----------12
+    candidate_text_color: 0x000000  #候選項.文本顏色--------7
+    comment_text_color: 0x006018    #候選項.編碼提示顏色----8
+    back_color: 0xccA4D9A4  #底色 -----------2
+    border_color: 0xccA4D9A4  #邊框色--------3
+    #label_color: 0xccA4D9A4  #序號顏色------4   BGR  0xBBGGRR  24位色值.十六進制.藍綠紅
+  "style/font_face": "SimSun-ExtB"     # 字體名稱
+  #"style/font_face": "方正宋体S-超大字符集""Microsoft YaHei"
+  #"style/font_face": "HanaMin""明兰""Sanskrit 2003""Microsoft Himalaya""夙黑"
+  "style/font_point": 15      # 字號
+  "style/fullscreen": false     # 全屏
+#  "style/horizontal": true     # 候選橫排
+  "style/inline_preedit": false  # 內嵌編碼（僅支持TSF）
+  "style/display_tray_icon": true  # 顯示托盤圖標
+  "style/layout":     #候選框的大小间距
+      min_width: 40
+      min_height: 0
+      border_width: 0
+      margin_x: 1
+      margin_y: 9  #爲了在候選區顯示梵文下加元音故設爲大值。
+      spacing: 5    #上下间隙。#爲了顯示梵文下加元音故設爲大值。
+      candidate_spacing: 5  #候選項間隔
+      hilite_padding: 1   #高亮
+      hilite_spacing: 1
+      round_corner: 0
+  
+#  app_options/cmd.exe: #在指定程序中关闭中文输入
+#    ascii_mode: true
